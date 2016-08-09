@@ -1,0 +1,29 @@
+{
+  "name": "webpacksassdemo",
+  "version": "1.0.0",
+  "description": "Webpack using sass demo for UI Guild",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "webpack"
+  },
+  "keywords": [
+    "Cignium",
+    "CSS",
+    "Fx"
+  ],
+  "author": "Cignium",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-node-externals": "^1.3.3"
+  }
+}
