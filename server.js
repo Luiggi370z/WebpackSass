@@ -5,9 +5,10 @@ var path = require('path');
 
 var server = new WebpackDevServer(webpack(config), {
   contentBase: path.join(__dirname, 'src'),
-  hot: true,
   https: false,
   noInfo: false,
+  lazy: false,
+  inline: true,
   publicPath: config.output.publicPath,
   quiet: false,
   stats: {
@@ -17,7 +18,7 @@ var server = new WebpackDevServer(webpack(config), {
     hash: false,
     version: false,
     colors: true
-  },
+  }
 }).listen(3001, 'localhost', function(err) {
   if (err) {
     console.log(err)
